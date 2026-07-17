@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Daniel Zhang</title>
+    <meta name="description" content="Research and publications by Daniel Zhang.">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = savedTheme === "dark" || (!savedTheme && prefersDark)
+            ? "dark"
+            : "light";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="/#about" aria-label="Daniel Zhang home">Daniel Zhang</a>
+        <nav aria-label="Primary navigation">
+          <a href="/#about">About</a>
+          <a href="/research/" aria-current="page">Research</a>
+          <a href="/daniel-zhang-cv.pdf" target="_blank" rel="noreferrer">CV</a>
+          <button class="theme-toggle" type="button">Dark</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell" id="main-content">
+      <aside class="author-profile" aria-label="Daniel Zhang profile">
+        <img
+          class="profile-photo"
+          src="/daniel-zhang.png"
+          alt="Daniel Zhang"
+          width="400"
+          height="400"
+        >
+
+        <div class="follow-block">
+          <ul>
+            <li>
+              <a href="mailto:d287zhan@uwaterloo.ca">
+                <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.4-.5L12 11.1 19.6 5H4.4ZM20 7.1l-7.4 5.9a1 1 0 0 1-1.2 0L4 7.1v11.4c0 .3.2.5.5.5h15a.5.5 0 0 0 .5-.5V7.1Z"/>
+                </svg>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/d287zhan" target="_blank" rel="noreferrer">
+                <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .7A11.3 11.3 0 0 0 8.4 22.8c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6A4.7 4.7 0 0 1 5.7 7.4c-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.5 1.2a12 12 0 0 1 6.3 0C18 3.7 19 4.1 19 4.1c.6 1.7.2 3 .1 3.3a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/danielzhang1004" target="_blank" rel="noreferrer">
+                <span class="linkedin-logo" aria-hidden="true">in</span>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.ca/citations?user=kAa_FtAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+                <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2 1 8l11 6 9-4.9V16h2V8L12 2Zm-6.3 9.6V17c0 2.2 2.8 4 6.3 4s6.3-1.8 6.3-4v-5.4L12 15l-6.3-3.4Z"/>
+                </svg>
+                <span>Google Scholar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <section class="content-section" id="research">
+          <h1>Research</h1>
+          <p>
+            I am broadly interested in the theory and practice of deep learning.
+            My current work focuses on scaling behavior in Bayesian neural
+            networks, reliable uncertainty quantification, and methods that make
+            modern machine learning systems more interpretable.
+          </p>
+
+          <article class="research-entry">
+            <p class="research-year">2023</p>
+            <div>
+              <h2>
+                <a href="https://arxiv.org/abs/2212.08990" target="_blank" rel="noreferrer">
+                  Plankton-FL: Exploration of Federated Learning for
+                  Privacy-Preserving Training of Deep Neural Networks for
+                  Phytoplankton Classification
+                </a>
+              </h2>
+              <p class="authors">
+                <strong>Daniel Zhang</strong>, Vikram Voleti, Alexander Wong,
+                and Jason Deglint
+              </p>
+              <p class="venue">
+                Journal of Computational Vision and Imaging Systems, 8(1),
+                17-19. Proceedings of CVIS 2022.
+              </p>
+              <p class="research-summary">
+                We study federated and mutually exclusive federated learning as
+                privacy-preserving approaches to training phytoplankton
+                classifiers across distributed data sources.
+              </p>
+              <a class="paper-link" href="https://arxiv.org/abs/2212.08990" target="_blank" rel="noreferrer">View on arXiv</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>Copyright 2026 Daniel Zhang.</p>
+        <p>Academic website - University of Waterloo</p>
+      </div>
+    </footer>
+
+    <script src="/assets/theme.js"></script>
+  </body>
+</html>
