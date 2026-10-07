@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Research | Daniel Zhang</title>
-    <meta name="description" content="Research and publications by Daniel Zhang.">
+    <meta name="description" content="Daniel Zhang's research in Bayesian neural networks, variational inference, uncertainty quantification, and efficient language models.">
     <link rel="stylesheet" href="/assets/styles.css">
     <script>
       (function () {
@@ -87,36 +87,126 @@
         <section class="content-section" id="research">
           <h1>Research</h1>
           <p>
-            I am broadly interested in the theory and practice of deep learning.
-            My current work focuses on scaling behavior in Bayesian neural
-            networks, reliable uncertainty quantification, and methods that make
-            modern machine learning systems more interpretable.
+            My research focuses on Bayesian deep learning, variational inference,
+            machine learning theory, uncertainty quantification, and efficient
+            language models. I work in the Data Analytics Laboratory at the
+            University of Waterloo, supervised by Professor Ali Ghodsi.
           </p>
 
+          <h2 class="section-heading">Manuscripts in preparation</h2>
+
           <article class="research-entry">
-            <p class="research-year">2023</p>
+            <p class="research-year">Ongoing</p>
             <div>
-              <h2>
+              <h3>BNN-µP: A µP Scaling Framework for Variational Inference</h3>
+              <p class="authors"><strong>Daniel Zhang</strong>, M. Li, and A. Ghodsi</p>
+              <p class="venue">Manuscript in preparation</p>
+              <p class="research-summary">
+                Developing a maximal-update parameterization for variational
+                Bayesian neural networks that jointly scales posterior means,
+                posterior variances, optimization, and KL regularization across
+                model width. Experiments with variational MLPs and Bayesian
+                ResNets on CIFAR-10 examine hyperparameter transfer, posterior
+                collapse, and predictive uncertainty.
+              </p>
+            </div>
+          </article>
+
+          <article class="research-entry">
+            <p class="research-year">Ongoing</p>
+            <div>
+              <h3>Variable-Width Transformers via Redundancy-Aware Width Reallocation</h3>
+              <p class="authors">Z. Ma, <strong>Daniel Zhang</strong>, J. Chen, R. Chen, and A. Ghodsi</p>
+              <p class="venue">Manuscript in preparation</p>
+              <p class="research-summary">
+                Elastic-RAWR is a decoder-only Transformer whose hidden width
+                varies across depth using online redundancy estimates,
+                same-checkpoint distillation, and a shared maximum-width
+                parameterization. Preliminary experiments use WikiText-103;
+                ongoing work targets compute-matched baselines, multi-seed
+                validation, and attention-diversity diagnostics.
+              </p>
+            </div>
+          </article>
+
+          <h2 class="section-heading">Peer-reviewed publication</h2>
+
+          <article class="research-entry">
+            <p class="research-year">2022</p>
+            <div>
+              <h3>
                 <a href="https://arxiv.org/abs/2212.08990" target="_blank" rel="noreferrer">
                   Plankton-FL: Exploration of Federated Learning for
                   Privacy-Preserving Training of Deep Neural Networks for
                   Phytoplankton Classification
                 </a>
-              </h2>
+              </h3>
               <p class="authors">
                 <strong>Daniel Zhang</strong>, Vikram Voleti, Alexander Wong,
                 and Jason Deglint
               </p>
               <p class="venue">
-                Journal of Computational Vision and Imaging Systems, 8(1),
-                17-19. Proceedings of CVIS 2022.
+                Proceedings of the 8th Annual Conference on Computational Vision
+                and Intelligent Systems (CVIS 2022). Oral presentation.
+                Published in the Journal of Computational Vision and Imaging
+                Systems, 8(1), 17–19 (2023).
               </p>
+              <p class="award-note">Best AI Paper Award, Waterloo AI Institute</p>
               <p class="research-summary">
                 We study federated and mutually exclusive federated learning as
                 privacy-preserving approaches to training phytoplankton
                 classifiers across distributed data sources.
               </p>
               <a class="paper-link" href="https://arxiv.org/abs/2212.08990" target="_blank" rel="noreferrer">View on arXiv</a>
+              <span aria-hidden="true"> · </span>
+              <a class="paper-link" href="https://doi.org/10.15353/jcvis.v8i1.5361" target="_blank" rel="noreferrer">Journal version</a>
+            </div>
+          </article>
+
+          <h2 class="section-heading">Selected research projects</h2>
+
+          <article class="research-entry">
+            <p class="research-year">2025</p>
+            <div>
+              <h3>Bayesian NoProp</h3>
+              <p class="venue">Doctoral comprehensive research project · University of Waterloo</p>
+              <p class="research-summary">
+                Introduced Bayesian linear and convolutional layers into a
+                backpropagation-free learning framework to study epistemic and
+                aleatoric uncertainty through variational inference and Monte
+                Carlo prediction. Experiments on CIFAR-10/100 explored KL
+                annealing, label embeddings, calibration, distribution shift,
+                and posterior collapse under excessive regularization.
+              </p>
+            </div>
+          </article>
+
+          <article class="research-entry">
+            <p class="research-year">2025</p>
+            <div>
+              <h3>Trust-Weighted LLM Aggregation</h3>
+              <p class="venue">Doctoral comprehensive research project · University of Waterloo</p>
+              <p class="research-summary">
+                Formulated stochastic decoding as sampling over implicit
+                reasoning paths. Accuracy- and embedding-variance-based trust
+                scores aggregate generations to assess entropy, calibration,
+                and semantic disagreement.
+              </p>
+            </div>
+          </article>
+
+          <article class="research-entry">
+            <p class="research-year">2023–24</p>
+            <div>
+              <h3>GAM SymbolicGPT: A Generalized Additive Model Approach to Symbolic Regression</h3>
+              <p class="venue">Master’s research · University of Waterloo</p>
+              <p class="research-summary">
+                Extended neural symbolic regression with additive structure and
+                a backfitting-inspired procedure to reduce the search burden in
+                higher-dimensional problems. Synthetic and applied regression
+                experiments examined when additive decomposition improves
+                interpretability and when interactions limit the approach.
+              </p>
             </div>
           </article>
         </section>

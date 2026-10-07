@@ -236,6 +236,36 @@ nav a:focus-visible {
   margin: 0 0 1.25rem;
 }
 
+.content-section + .content-section {
+  margin-top: 3rem;
+}
+
+.section-heading {
+  margin: 2.75rem 0 1.25rem;
+  color: var(--heading);
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.content-section > .section-heading:first-child {
+  margin-top: 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.55rem;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.detail-list li + li {
+  margin-top: 0.85rem;
+}
+
+.section-heading + .research-entry {
+  margin-top: 0;
+}
+
 .research-entry {
   display: grid;
   grid-template-columns: 62px minmax(0, 1fr);
@@ -251,29 +281,35 @@ nav a:focus-visible {
   font-weight: 600;
 }
 
-.research-entry h2 {
+.research-entry h3 {
   margin: 0 0 0.65rem;
   font-size: 1.13rem;
   font-weight: 700;
   line-height: 1.45;
 }
 
-.research-entry h2 a {
+.research-entry h3 a {
   color: var(--heading);
   text-decoration: none;
 }
 
-.research-entry h2 a:hover,
-.research-entry h2 a:focus-visible {
+.research-entry h3 a:hover,
+.research-entry h3 a:focus-visible {
   color: var(--blue);
   text-decoration: underline;
 }
 
 .research-entry .authors,
 .research-entry .venue,
+.research-entry .award-note,
 .research-entry .research-summary {
   margin-bottom: 0.45rem;
   font-size: 0.91rem;
+}
+
+.award-note {
+  color: var(--heading);
+  font-weight: 600;
 }
 
 .research-entry .venue,
